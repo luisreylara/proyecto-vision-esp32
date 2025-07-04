@@ -1,4 +1,4 @@
- # Ejecutar el docker compose
+ # Ejecutar el docker compose, se ejecuta automáticamente el main.py , verificarlo con el comando ```ps -x```
 
  ```
 docker compose up -d 
@@ -12,7 +12,7 @@ docker build -t app-vision:1.0.0 . -f Dockerfile
 ```
 
 
- # forma 1 para crearr el contenedor e ingresar en este
+ # forma 1 para crear el contenedor e ingresar en este
 
 ```
 docker run -it -p 5000:5000 app-vision:1.0.0 sh
