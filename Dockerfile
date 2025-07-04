@@ -5,9 +5,11 @@ RUN apt-get update && \
     apt-get clean
 
 WORKDIR /app/
-COPY . .
+COPY /main.py /app/
+COPY /requirements.txt /app/
+
 
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 5000
-CMD ["python", "main.py"]
+CMD ["python", "main.py", "&"]
