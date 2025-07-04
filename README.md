@@ -16,6 +16,11 @@ docker run -it -p 5000:5000 app-vision:1.0.0 sh
  # ejecutar
 
 ```
-docker container run --name app-vision:1.0.0 -dp 5000:5000 app-vision
+docker container run --name app-vision -dp 5000:5000 app-vision:1.0.0
 ```
 
+# ejecutar
+
+```
+docker exec -it app-vision sh
+```
