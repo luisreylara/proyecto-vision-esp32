@@ -1,0 +1,7 @@
+services:
+  www:
+    build: .
+    container_name: app-vision
+    ports:
+      - "5000:5000"
+    
